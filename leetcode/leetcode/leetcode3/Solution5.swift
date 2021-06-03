@@ -29,13 +29,44 @@ import UIKit
  输入：s = "ac"
  输出："a"
  */
-class Solution5{
-    func longestPalindrome(_ s: String) -> String {
-        var result = s.prefix(1)
-        var len = s.count
-        if len < 2 {
+
+
+
+class Solution5 {
+    
+    //中心扩散法 循环遍历 整个字符数组,然后比对点位置从头移动到尾 以比对点为中心往两边扩散 直到找到最大回文串
+    
+    func longestPalindrome(_ s: String) -> String {  // 中心扩散法  我自己的暴力法总超时,不得不借鉴一下不超时的
+        if s.count < 2 {
             return s
         }
+        var start = 0
+        var maxLen = 0
+        let length = s.count
+        let strAry = Array(s)
+                
+        for i in 0..<length {
+            if length - i <= maxLen / 2 {
+                break;
+            }
+            var left = i, right = i;
+            while (right < length - 1) && (strAry[right + 1] == strAry[right]) {
+                right += 1
+            }
+            
+            while (right < length - 1) && left >= 1 && (strAry[right + 1] == strAry[left - 1]) {
+                right += 1
+                left -= 1
+            }
+            if right - left + 1 > maxLen {
+                start = left
+                maxLen = right - left + 1
+            }
+        }
         
+        let startIndex = s.index(s.startIndex, offsetBy: start)
+        let endIndex = s.index(startIndex, offsetBy: maxLen)
+        let range = startIndex ..< endIndex
+        return  String(s[range])
     }
 }

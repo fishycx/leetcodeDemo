@@ -27,7 +27,7 @@ extension ViewController:UITextFieldDelegate {
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         let toBeString = (textField.text as NSString!).replacingCharacters(in: range, with: string)
     
-        self.result.text = "\(Solution().lengthOfLongestSubstring(toBeString))"
+        self.result.text = "\(Solution5().longestPalindrome(toBeString))"
         return true
     }
 }
