@@ -32,7 +32,7 @@ import UIKit
 
 
 
-class Solution5 {
+extension Solution {
     
     //中心扩散法 循环遍历 整个字符数组,然后比对点位置从头移动到尾 以比对点为中心往两边扩散 直到找到最大回文串
     

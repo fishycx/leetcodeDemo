@@ -12,22 +12,17 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var inputTextFiled: UITextField!
     @IBOutlet weak var result: UILabel!
+    @IBOutlet weak var textField2: UITextField!
+    @IBAction func submit(_ sender: Any) {
+        self.result.text = "\(Solution().reverse(x: Int(inputTextFiled.text ?? "0")!))"
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        self.inputTextFiled.delegate = self
 
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-}
-extension ViewController:UITextFieldDelegate {
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        let toBeString = (textField.text as NSString!).replacingCharacters(in: range, with: string)
-    
-        self.result.text = "\(Solution5().longestPalindrome(toBeString))"
-        return true
     }
 }

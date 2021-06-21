@@ -15,6 +15,8 @@
 		1A1B51731F50153300781B34 /* leetcodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1B51721F50153300781B34 /* leetcodeTests.swift */; };
 		1A1B517E1F50153300781B34 /* leetcodeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1B517D1F50153300781B34 /* leetcodeUITests.swift */; };
 		1A1B518D1F50186700781B34 /* Solution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1B518C1F50186700781B34 /* Solution.swift */; };
+		1A439E4A266F3A85008D98C7 /* Solution6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A439E49266F3A85008D98C7 /* Solution6.swift */; };
+		1A4D718A26805F2D00FCBE1E /* day7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4D718926805F2D00FCBE1E /* day7.swift */; };
 		1AD5445025CBA7540066B67A /* Solution5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD5444F25CBA7540066B67A /* Solution5.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +52,8 @@
 		1A1B517D1F50153300781B34 /* leetcodeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = leetcodeUITests.swift; sourceTree = "<group>"; };
 		1A1B517F1F50153300781B34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A1B518C1F50186700781B34 /* Solution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution.swift; sourceTree = "<group>"; };
+		1A439E49266F3A85008D98C7 /* Solution6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution6.swift; sourceTree = "<group>"; };
+		1A4D718926805F2D00FCBE1E /* day7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = day7.swift; sourceTree = "<group>"; };
 		1AD5444F25CBA7540066B67A /* Solution5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution5.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -135,6 +139,8 @@
 			children = (
 				1A1B518C1F50186700781B34 /* Solution.swift */,
 				1AD5444F25CBA7540066B67A /* Solution5.swift */,
+				1A439E49266F3A85008D98C7 /* Solution6.swift */,
+				1A4D718926805F2D00FCBE1E /* day7.swift */,
 			);
 			path = leetcode3;
 			sourceTree = "<group>";
@@ -274,6 +280,8 @@
 				1A1B51601F50153300781B34 /* ViewController.swift in Sources */,
 				1A1B515E1F50153300781B34 /* AppDelegate.swift in Sources */,
 				1A1B518D1F50186700781B34 /* Solution.swift in Sources */,
+				1A4D718A26805F2D00FCBE1E /* day7.swift in Sources */,
+				1A439E4A266F3A85008D98C7 /* Solution6.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
